@@ -1,0 +1,28 @@
+
+@use'../custom' as *;
+
+
+
+//GRADIENT MIXINS
+@mixin gradient{
+    background: linear-gradient(to right,rgba($primary,0.95),rgba($secondary,0.95));
+}
+
+@mixin gradiental{
+    background: linear-gradient(to left,rgba($primary,0.95),rgba($secondary,0.95));
+}
+
+//ABSOLUTE CENTER
+
+@mixin absoluteCenter{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+}
+@mixin transitionProperty{
+    transition-duration: 1000ms;
+    transition-property: all;
+    
+}
